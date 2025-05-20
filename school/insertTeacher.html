@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Προσθηκη Καθηγητη</title>
+    <style type="text/css">
+        table{
+            font-family: Arial;
+            font-size: small;
+            border: thin solid;
+            background-color: orange;
+        }
+        body{
+            background-image: url(backgound.gif);
+        }
+        p{
+            font-family: Arial;
+            font-weight: bold;
+            text-align: center;
+        }
+        a{
+            font-family: Arial;
+            font-size: small;
+            font-weight: bold;
+            text-indent: 10px;
+        }
+    </style>
+</head>
+<body>
+   <p>Προσθηκη νεου Καθηγητη</p> 
+   <form action="insertTeacher.php" method="post">
+      <table align="center">
+          <tr>
+            <td>Κωδικος Καθηγητη</td>
+            <td><input type="text" size = "10" maxlength="10" name="teacher_id"></td>
+        </tr>
+        <tr>
+            <td>Επωνυμο</td>
+            <td><input type="text" size = "30" maxlength="30" name="eponymo"></td>
+        </tr>
+        <tr>
+            <td>Ονομα</td>
+            <td><input type="text" size = "20" maxlength="20" name="onoma"></td>
+        </tr>
+        <tr>
+            <td>Αντικειμενο</td>
+            <td><input type="text" size = "15" maxlength="15" name="subject"></td>
+        </tr>
+      </table>
+      <p><input type="submit" name="formsubmit" value="Εισαγωγη"></p>
+   </form><br><br>
+   <p><a href="index.html">Επιστροφη</a></p>
+</body>
+</html>
