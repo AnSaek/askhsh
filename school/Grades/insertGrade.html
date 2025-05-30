@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Προσθηκη Βαθμου</title>
+    <style type="text/css">
+        table{
+            font-family: Arial;
+            font-size: small;
+            border: thin solid;
+            background-color: orange;
+        }
+        body{
+            background-image: url(../images/background.gif);
+        }
+        p{
+            font-family: Arial;
+            font-weight: bold;
+            text-align: center;
+        }
+        a{
+            font-family: Arial;
+            font-size: small;
+            font-weight: bold;
+            text-indent: 10px;
+        }
+    </style>
+</head>
+<body>
+   <p>Προσθηκη νεου Βαθμου</p> 
+   <form action="insertGrade.php" method="post">
+      <table align="center">
+          <tr>
+            <td>Μαθημα</td>
+            <td><input type="text" size = "30" maxlength="30" name="subject"></td>
+        </tr>
+        <tr>
+            <td>Επωνυμο</td>
+            <td><input type="text" size = "30" maxlength="30" name="surname"></td>
+        </tr>
+        <tr>
+            <td>Ονομα</td>
+            <td><input type="text" size = "20" maxlength="20" name="name"></td>
+        </tr>
+        <tr>
+            <td>Ταξη</td>
+            <td><input type="text" size = "3" maxlength="3" name="class"></td>
+        </tr>
+        <tr>
+            <td>Βαθμος</td>
+            <td><input type="text" size = "2" maxlength="2" name="grade"></td>
+        </tr>
+      </table>
+      <p><input type="submit" name="formsubmit" value="Εισαγωγη"></p>
+   </form><br><br>
+   <p><a href="../index.html">Επιστροφη</a></p>
+</body>
+</html>
